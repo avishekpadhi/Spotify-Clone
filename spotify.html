@@ -5,82 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-    <script src="https://kit.fontawesome.com/a0ef7f5da8.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="spotify.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li class="brand"><img src="logo.png" alt="Spotify logo">Spotify</li>
+            <li class="brand" id="logo"><img src="logo.png" alt="">Spotify</li>
+            <!-- <li class="brand">Spotify</li> -->
             <li>Home</li>
             <li>About</li>
-            
         </ul>
+    
     </nav>
+
+
     <div class="container">
         
-        <div class="songlist">
+        <div class="songList">
             <h1>Best of Linkin Park</h1>
             <div>
-                <div class="songitem">
-                    <img src="cover1.jpg" alt="1" >
-                    <span>Hybrid Theory</span>
-                    <span class="songlistplay"><span class="timestamp">5:34 <i class="fa-solid fa-circle-play"></i></span></span>
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="">
+                    <span>Numb-Encore</span>
+                    <span class="songlistplay"><i class="fa-solid songPlay fa-circle-play"></i></span>
                 </div>
-                <div class="songitem">
-                    <img src="cover1.jpg" alt="1" >
-                    <span>Hybrid Theory</span>
-                    <span class="songlistplay"><span class="timestamp">5:34 <i class="fa-solid fa-circle-play"></i></span></span>
+
+                <div class="songItem">
+                    <img src="covers/2.jpg" alt="">
+                    <span>Faint(speedy version)</span>
+                    <span class="songlistplay"><i class="fa-solid songPlay fa-circle-play"></i></span>
                 </div>
-                <div class="songitem">
-                    <img src="cover1.jpg" alt="1" >
-                    <span>Hybrid Theory</span>
-                    <span class="songlistplay"><span class="timestamp">5:34 <i class="fa-solid fa-circle-play"></i></span></span>
+ 
+                <div class="songItem">
+                    <img src="covers/3.jpg" alt="">
+                    <span>Castle of Glass</span>
+                    <div class="songlistplay"><i class="fa-solid songPlay fa-circle-play"></i></div>
                 </div>
-                <div class="songitem">
-                    <img src="cover1.jpg" alt="1" >
-                    <span>Hybrid Theory</span>
-                    <span class="songlistplay"><span class="timestamp">5:34 <i class="fa-solid fa-circle-play"></i></span></span>
+                <div class="songItem">
+                    <img src="covers/4.jpg" alt="">
+                    <span>Leave out all the rest</span>
+                    <span class="songlistplay"><i class="fa-solid songPlay fa-circle-play"></i></span>
                 </div>
-                <div class="songitem">
-                    <img src="cover1.jpg" alt="1" >
-                    <span>Hybrid Theory</span>
-                    <span class="songlistplay"><span class="timestamp">5:34 <i class="fa-solid fa-circle-play"></i></span></span>
+
+                <div class="songItem">
+                    <img src="covers/5.jpg" alt="">
+                    <span>In the End</span>
+                    <span class="songlistplay"><i class="fa-solid songPlay fa-circle-play"></i></span>
                 </div>
-                <div class="songitem">
-                    <img src="cover1.jpg" alt="1" >
-                    <span>Hybrid Theory</span>
-                    <span class="songlistplay"><span class="timestamp">5:34 <i class="fa-solid fa-circle-play"></i></span></span>
+
+                <div class="songItem">
+                    <img src="covers/6.jpg" alt="">
+                    <span>Somewhere I belong</span>
+                    <span class="songlistplay"><i class="fa-solid songPlay fa-circle-play"></i></span>
                 </div>
-                <div class="songitem">
-                    <img src="cover1.jpg" alt="1" >
-                    <span>Hybrid Theory</span>
-                    <span class="songlistplay"><span class="timestamp">5:34 <i class="fa-solid fa-circle-play"></i></span></span>
+
+                <div class="songItem">
+                    <img src="covers/7.jpg" alt="">
+                    <span>What I have done</span>
+                    <span class="songlistplay"><i class="fa-solid songPlay fa-circle-play"></i></span>
                 </div>
-                <div class="songitem">
-                    <img src="cover1.jpg" alt="1" >
-                    <span>Hybrid Theory</span>
-                    <span class="songlistplay"><span class="timestamp">5:34 <i class="fa-solid fa-circle-play"></i></span></span>
+
+                <div class="songItem">
+                    <img src="covers/8.jpg" alt="">
+                    <span>heavy</span>
+                    <span class="songlistplay"><i class="fa-solid songPlay fa-circle-play"></i></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="covers/9.jpg" alt="">
+                    <span>Breaking the habit</span>
+                    <span class="songlistplay"><i class="fa-solid songPlay fa-circle-play"></i></span>
                 </div>
             </div>
-
-
+            
         </div>
-        <div class="songbanner"></div>
+        <div class="songBanner"></div>
     </div>
+
+
+    
     <div class="bottom">
-        <input type="range" id="myprogressbar" min="0" value="0" max="100">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
         <div class="icons">
-            <!-- fontawesome icons -->
-            <i class="fas fa-3x fa-step-backward" id="previous"></i>
-            <i class="far fa-3x fa-play-circle" id="masterplay"></i>
-            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+            <i class="fa-solid songPlay fa-2x fa-backward" style="color: aliceblue;"></i>
+            <i class="fa-solid songPlay fa-2x fa-circle-play" id="masterPlay" style="color: aliceblue;"></i>
+            <i class="fa-solid songPlay fa-2x fa-forward" style="color: aliceblue;"></i>
+            <i class="fa-solid songPlay fa-2x fa-arrow-rotate-right" style="color: aliceblue;"></i>
+            
         </div>
-        <div class="songinfo">
-            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+        <div class="songInfo">
+            <img src="playing.gif" id="gif" alt="" ><span id="songname">Castle of glass-Linkin Park</span> 
         </div>
     </div>
+
+   
     <script src="spotify.js"></script>
+    <script src="https://kit.fontawesome.com/a0ef7f5da8.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>
